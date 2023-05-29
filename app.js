@@ -1,7 +1,11 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
-
-menu.addEventListener('click', function() {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
+$(document).ready(function() {
+  // Wait for the page to finish loading
+  
+  // Toggle Dark Mode
+  $(document).on('click', '.toggle-dark-mode', function() {
+    // When the dark mode toggle is clicked
+    
+    $('body').toggleClass('dark-mode');
+    // Toggle the appearance of dark mode on the page
+  });
 });
